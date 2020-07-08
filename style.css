@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    color: white;
+}
+.container {
+    width: 22vw;
+    height: 70vh;
+    border: solid 2px black;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-gap: 2%;
+    padding: 2%;
+    background-color: black;
+}
+.visor {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 3px solid #353636;
+    border-radius: 1rem;
+    font-size: 5em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+}
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+}
+.ac, .plusminus, .percentage {
+    background-color: #A4A3A4;
+    color: black;
+}
+.division, .multiplication, .minus, .plus, .equal {
+    background-color: #FFA600;
+}
+.one, .two, .three, .four, .five , .six, .seven, .eight, .nine, .zero, .point {
+    background-color: #353636;
+}
+
+button {
+    border-radius: 50%;
+    margin: 0 auto;   
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    color: white;
+    font-size: 2em;
+}
+#zero {
+    align-self: stretch;
+    width: 10rem;
+    border-radius: 3rem;
+}
